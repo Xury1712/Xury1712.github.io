@@ -50,7 +50,7 @@
 			<!-- Intro -->
 			<article id="intro">
 				<h2 class="major">About the Game</h2>
-				<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+				<span class="image main"><img src="images/demoss.jpg" alt="" /></span>
 				<p><strong>Labyrinths of Logic</strong> is a procedurally generated 3D dungeon crawler with dynamic difficulty, developed using the Unity engine. Designed from the ground up around an innovative structural zone-partition algorithm, the game tackles the age-old problem of impossible mazes in procedurally generated content. It generates massive, multi-floor labyrinths that are mathematically guaranteed to be solvable—ensuring that you will never face an impossible dead-end or find a required key permanently sealed behind its own door.</p>
 				<p>Set in a visually striking dark-fantasy neon environment, every run offers a completely fresh, time-attack challenge. The game pushes the boundaries of traditional generation by integrating a multi-floor system. Players must navigate contiguous floor ranges connected by bidirectional teleport portals, meticulously hunt down specifically coloured keys to unlock progression doors, and survive against increasingly hostile odds. The structural integrity of the algorithm ensures that the path forward always exists, turning the gameplay into a pure test of skill, speed, and logic.</p>
 				<p>As you dive deeper into the abyss, the game's dynamic difficulty system seamlessly takes over to continuously scale the challenge. Early levels serve as a warm-up, but as you progress, map dimensions aggressively expand across up to three vertical floors. At the same time, your precious time budget tightens, forcing split-second decision-making. The dark corridors are guarded by a sophisticated, data-driven enemy AI. From simple patrolling guards in the early stages to relentless NavMesh chasers, stealthy hunters, and instant-fire turrets later on, the labyrinth adapts to keep you on your toes.</p>
@@ -60,7 +60,12 @@
 			<!-- Work -->
 			<article id="work">
 				<h2 class="major">Gameplay</h2>
-				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+				<span class="image main">
+					<video controls width="100%" style="border-radius: 4px; outline: none;">
+						<source src="images/Demo.mp4" type="video/mp4">
+						Tarayıcınız video etiketini desteklemiyor.
+					</video>
+				</span>
 				<p>At its core, <strong>Labyrinths of Logic</strong> is a fast-paced, time-attack race against an unforgiving clock. Every second counts as you navigate sprawling, procedurally assembled mazes. Your primary objective is deceptively simple: find the exit before your timer reaches zero. However, the path is deliberately convoluted. You are required to explore the labyrinth to discover specific coloured keys, which are mandatory to unlock corresponding coloured progression doors that block your path to the lower depths.</p>
 				<p>The game heavily emphasizes verticality and spatial awareness. Starting from Level 3, the labyrinths expand into multi-floor structures connected by bidirectional teleport portals. These portals are colour-coded for direction (warm colours indicating an upward teleport, cool colours indicating a downward transition) to prevent disorientation. This multi-floor design requires players to memorize paths not just horizontally, but vertically, adding a significant layer of depth to the exploration mechanics.</p>
 				<p>Survival, of course, requires more than just finding keys and doors. The labyrinth is heavily populated by diverse enemy types driven by a finite-state machine AI system. Each enemy type features distinct behaviors: 'Naive' enemies wander in predictable patrols, 'Chasers' utilize A* NavMesh pathfinding to relentlessly hunt you down once spotted, 'Hunters' use advanced search tactics, and 'Turrets' deploy instant-fire projectiles to lock down long corridors. The AI shares a unified line-of-sight module, meaning stealth and corner-peeking can be just as viable as rushing past them.</p>
